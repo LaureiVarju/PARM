@@ -7,5 +7,6 @@ Pre-Approved Randomized Messenger
 - [X] Fix PATH variables
 - [X] Install pip
 - [X] Create test server
-- [ ] Create new bot id
-- [ ] Get discord.py installed
+- [X] Create new bot id
+- [X] Get discord.py installed
+- [X] Get PARM connected to a server
