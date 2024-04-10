@@ -5,6 +5,7 @@ Pre-Approved Randomized Messenger
 - [X] Install VSCode
 - [X] Install Python
 - [X] Fix PATH variables
-- [ ] Install pip
+- [X] Install pip
 - [X] Create test server
 - [ ] Create new bot id
+- [ ] Get discord.py installed
