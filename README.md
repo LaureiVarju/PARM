@@ -1,9 +1,9 @@
 # PARM
 Pre-Approved Randomized Messenger
 
-- Create repo [x]
-- Install VSCode [x]
-- Install Python []
-- Install pip []
-- Create test server [x]
-- Create new bot id [x]
+- [X] Create repo
+- [X] Install VSCode
+- [ ]Install Pytho
+- [] Install pip
+- [X] Create test server
+- [X] Create new bot id
