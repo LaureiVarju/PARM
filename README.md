@@ -10,3 +10,6 @@ Pre-Approved Randomized Messenger
 - [X] Create new bot id
 - [X] Get discord.py installed
 - [X] Get PARM connected to a server
+- [X] Get PARM code v.1 online
+- [ ] Get PARM to listen to channel messages
+- [ ] Get real code structure in github
