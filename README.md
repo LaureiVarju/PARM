@@ -12,7 +12,7 @@ Pre-Approved Randomized Messenger
 - [X] Get PARM connected to a server
 - [X] Get PARM code v.1 online locally
 - [X] Learn about Privileged Intents to make code work in channels
-- [ ] Hook up git to VSCode
-- [ ] setup gitignore
+- [X] Hook up git to VSCode
+- [X] setup gitignore
 - [ ] Get Current Code hosted and running in AWS Lambda
 - [ ] Choose a cloud-based database
