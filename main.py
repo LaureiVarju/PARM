@@ -14,6 +14,13 @@ import datetime
 
 # syntax to pick up an environment variable in AWS Lambda
 DISCORD_TOKEN = os.environ.get("DISCORD_TOKEN")
+WEBHOOK_URL = os.environ.get("WEBHOOK_URL")
+
+#lambda handler
+def lambda_handler(event, context):
+	print(f"event is: {event}")
+	print(f"context is: {context}")
+	
 
 permissions = discord.Permissions()
 permissions.update(send_messages=True, read_messages=True)
