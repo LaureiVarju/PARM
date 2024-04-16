@@ -11,6 +11,6 @@ Pre-Approved Randomized Messenger
 - [X] Get discord.py installed
 - [X] Get PARM connected to a server
 - [X] Get PARM code v.1 online locally
-- [ ] Learn about Priviledged Intents
+- [X] Learn about Priviledged Intents
 - [ ] Get Current Code hosted and running in AWS Lambda
 - [ ] Choose a cloud-based database
