@@ -2,12 +2,18 @@ import discord
 import os
 import datetime
 
-# Import load_dotenv function from dotenv module.
-from dotenv import load_dotenv
-# Loads the .env file that resides on the same level as the script.
-load_dotenv()
-# Grab the API token from the .env file.
-DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+
+## Syntax to populate discord_token when running locally and reading from a .env file
+# # Import load_dotenv function from dotenv module.
+# from dotenv import load_dotenv
+# # Loads the .env file that resides on the same level as the script.
+# load_dotenv()
+# # Grab the API token from the .env file.
+# DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+#####
+
+# syntax to pick up an environment variable in AWS Lambda
+DISCORD_TOKEN = os.environ.get("DISCORD_TOKEN")
 
 permissions = discord.Permissions()
 permissions.update(send_messages=True, read_messages=True)
