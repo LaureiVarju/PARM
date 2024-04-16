@@ -1,17 +1,7 @@
-
-
+import discord
+import os
 import datetime
 
-# Get the current date and time
-current_time = datetime.datetime.now()
-
-# Format the date and time as a string
-timestamp = current_time.strftime("[%Y-%m-%d %H:%M:%S]")
-
-# IMPORT DISCORD.PY. ALLOWS ACCESS TO DISCORD'S API.
-import discord
-# Import the os module.
-import os
 # Import load_dotenv function from dotenv module.
 from dotenv import load_dotenv
 # Loads the .env file that resides on the same level as the script.
@@ -23,18 +13,9 @@ permissions = discord.Permissions()
 permissions.update(send_messages=True, read_messages=True)
 permissions_integer = permissions.value
 
-
-# GETS THE CLIENT OBJECT FROM DISCORD.PY. CLIENT IS SYNONYMOUS WITH BOT.
-
-# # intents = discord.Intents.default()
-# # bot = discord.Client(intents=intents)
-
-# intents = discord.Intents.default()
-# intents.messages = True
-
-# bot = discord.Client(intents=intents)
-# # bot = discord.Client()
-
+# Discord has standardized and priviledged permissions levels, or "intents".
+# Reading and writing messages in most contexts is a privileged intent that needs to be explicitly set to True in the code and enabled in the bot's permission settings in the Discord Developer Portal
+# Otherwise, message.content will return empty
 from discord import Intents
 from discord.ext import commands
 
@@ -45,34 +26,37 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-# EVENT LISTENER FOR WHEN THE BOT HAS SWITCHED FROM OFFLINE TO ONLINE.
+
+current_time = datetime.datetime.now()
+timestamp = current_time.strftime("[%Y-%m-%d %H:%M:%S]")
+
+# Event listener for when the bot has switched from offline to online
 @bot.event
 async def on_ready():
-	# CREATES A COUNTER TO KEEP TRACK OF HOW MANY GUILDS / SERVERS THE BOT IS CONNECTED TO.
+	# Creates a counter to keep track of how many guilds/servers the bot is connected to
 	guild_count = 0
 
-	# LOOPS THROUGH ALL THE GUILD / SERVERS THAT THE BOT IS ASSOCIATED WITH.
+	# Loops through all the guild/servers that the bot is associated with
 	for guild in bot.guilds:
-		# PRINT THE SERVER'S ID AND NAME.
+		#Print the server's ID and name
 		print(f"- {guild.id} (name: {guild.name})")
 
-		# INCREMENTS THE GUILD COUNTER.
+		# Increments the guild counter
 		guild_count = guild_count + 1
 
-	# PRINTS HOW MANY GUILDS / SERVERS THE BOT IS IN.
-	print("SampleDiscordBot is in " + str(guild_count) + " guilds.")
-	print(permissions_integer)
+	print("PARM is currently located in " + str(guild_count) + " guilds.")
+	print(f"PARM's current permissions integer is {permissions_integer}")
 
-# EVENT LISTENER FOR WHEN A NEW MESSAGE IS SENT TO A CHANNEL.
+# Event listened for when a new message is sent to a channel or DM
 @bot.event
 async def on_message(message):
 	print(f"{timestamp} Received message: {message.content} in channel: {message.channel} from {message.author}")
-	# CHECKS IF THE MESSAGE THAT WAS SENT IS EQUAL TO "HELLO".
+
 	if message.content == "hello":
 		
 		print("Responding to hello message")
-		# SENDS BACK A MESSAGE TO THE CHANNEL.
+		# sends back a message to the channel (or DM)
 		await message.channel.send("hey dirtbag")
 
-# EXECUTES THE BOT WITH THE SPECIFIED TOKEN. TOKEN HAS BEEN REMOVED AND USED JUST AS AN EXAMPLE.
+# Executes the bot with the token defined in .env
 bot.run(DISCORD_TOKEN)
