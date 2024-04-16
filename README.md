@@ -15,6 +15,6 @@ Pre-Approved Randomized Messenger
 - [X] Hook up git to VSCode
 - [X] setup gitignore
 - [ ] set the handler to the function in your code that should be invoked when the Lambda function is triggered
-- [ ] abstract away environment variables
+- [X] abstract away environment variables
 - [ ] Get Current Code hosted and running in AWS Lambda
 - [ ] Choose a cloud-based database
