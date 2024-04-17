@@ -18,8 +18,8 @@ Pre-Approved Randomized Messenger
 - [X] Setup AWS CDK
 - [X] Setup AWS Toolkit for VSCode
 - [X] Install the AWS CLI and fix PATH variables
-- [ ] Setup AWS short-term credentials
-- [ ] Bootstrap with CDK
+- [X] Setup AWS short-term credentials
+- [X] Bootstrap with CDK
 - [ ] set the handler to the function in your code that should be invoked when the Lambda function is triggered
 - [X] setup a webhook in the server
 - [X] abstract away environment variables
