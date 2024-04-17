@@ -1,6 +1,9 @@
 # PARM
 Pre-Approved Randomized Messenger
 
+PARM is a discord bot that allows users to store messages, links, and attachments in a AWS Redshift database.
+That data is then sent to a target user at semi-randomized intervals (if the target user has opted in to receive them)
+
 - [X] Create repo
 - [X] Install VSCode
 - [X] Install Python
