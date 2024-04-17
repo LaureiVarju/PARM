@@ -14,6 +14,7 @@ Pre-Approved Randomized Messenger
 - [X] Learn about Privileged Intents to make code work in channels
 - [X] Hook up git to VSCode
 - [X] setup gitignore
+- [ ] Setup AWS CDK
 - [ ] set the handler to the function in your code that should be invoked when the Lambda function is triggered
 - [X] setup a webhook in the server
 - [X] abstract away environment variables
