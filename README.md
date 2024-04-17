@@ -14,6 +14,7 @@ Pre-Approved Randomized Messenger
 - [X] Learn about Privileged Intents to make code work in channels
 - [X] Hook up git to VSCode
 - [X] setup gitignore
+- [X] Get Node/npm to be able to download AWS CDK
 - [X] Setup AWS CDK
 - [X] Setup AWS Toolkit for VSCode
 - [ ] Bootstrap with CDK
