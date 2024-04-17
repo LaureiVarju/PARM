@@ -1,0 +1,4 @@
+- name: bye
+  description: say bye
+- name: hello
+  description: say hello
