@@ -17,9 +17,11 @@ Pre-Approved Randomized Messenger
 - [X] Get Node/npm to be able to download AWS CDK
 - [X] Setup AWS CDK
 - [X] Setup AWS Toolkit for VSCode
+- [X] Install the AWS CLI and fix PATH variables
 - [ ] Bootstrap with CDK
 - [ ] set the handler to the function in your code that should be invoked when the Lambda function is triggered
 - [X] setup a webhook in the server
 - [X] abstract away environment variables
 - [ ] Get Current Code hosted and running in AWS Lambda
 - [ ] Choose a cloud-based database
+- [ ] 
