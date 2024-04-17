@@ -8,7 +8,7 @@ That data is then sent to a target user at semi-randomized intervals (if the tar
 - [X] Create repo
 - [X] Install VSCode
 - [X] Install Python
-- [X] Fix PATH variables for Python, pip, Node, and npm
+- [X] Prepare PATH variables for Python, pip, Node, and npm
 - [X] Install pip
 - [X] Create test server
 - [X] Create new bot id
@@ -24,7 +24,7 @@ That data is then sent to a target user at semi-randomized intervals (if the tar
 - [X] Install the AWS CLI and fix PATH variables
 - [X] Setup AWS short-term credentials
 - [X] Bootstrap with CDK
-- [ ] set the handler to the function in your code that should be invoked when the Lambda function is triggered
+- [ ] setup the AWS Lambda handler function in the code
 - [X] setup a webhook in the server
 - [X] abstract away environment variables
 - [ ] Get Current Code hosted and running in AWS Lambda
