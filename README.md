@@ -24,9 +24,10 @@ That data is then sent to a target user at semi-randomized intervals (if the tar
 - [X] Install the AWS CLI and fix PATH variables
 - [X] Setup AWS short-term credentials
 - [X] Bootstrap with CDK
-- [ ] install Docker
+- [X] install Docker
+- [X] deploy
 - [ ] setup the AWS Lambda handler function in the code
 - [X] setup a webhook in the server
 - [X] abstract away environment variables
 - [ ] Get Current Code hosted and running in AWS Lambda
-- [ ] Choose a cloud-based database
+- [ ] Setup a database
