@@ -26,8 +26,9 @@ That data is then sent to a target user at semi-randomized intervals (if the tar
 - [X] Bootstrap with CDK
 - [X] install Docker
 - [X] deploy
-- [ ] setup the AWS Lambda handler function in the code
+- [X] setup the AWS Lambda handler function in the code
 - [X] setup a webhook in the server
 - [X] abstract away environment variables
-- [ ] Get Current Code hosted and running in AWS Lambda
+- [X] Get Current Code hosted and running in AWS Lambda
+- [ ] Clean up and document current code
 - [ ] Setup a database
