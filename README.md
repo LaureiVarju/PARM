@@ -32,4 +32,5 @@ That data is then sent to a target user at semi-randomized intervals (if the tar
 - [X] Get Current Code hosted and running in AWS Lambda
 - [ ] Clean up and document current code
 - [ ] Abstract commands
+- [ ] delete old commands
 - [ ] Setup a database
